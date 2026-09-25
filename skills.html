@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <meta charset="UTF-8">
 
@@ -367,12 +368,27 @@
                 our customers.
             </p>
 
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">f</a>
-                <a href="#" aria-label="Instagram">◎</a>
-                <a href="#" aria-label="Twitter">𝕏</a>
-                <a href="#" aria-label="WhatsApp">☏</a>
-            </div>
+      <div class="social-links">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1Fo2nrsQz5/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/j_mangwesi?stkn=YWo1aHkzZWx0bThq&utm_source=qr" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- LinkedIn (au Twitter/X) -->
+    <a href="https://www.linkedin.com/in/joel-mangwesi/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/255177123792" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
         </div>
 
 
@@ -638,6 +654,71 @@
     }
 
 }
+/* =========================================================
+   DARK MODE STYLES
+   ========================================================= */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .contact,
+body.dark-mode section {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .contact-form,
+body.dark-mode .card,
+body.dark-mode div.content-box {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode h2, 
+body.dark-mode p, 
+body.dark-mode label,
+body.dark-mode .contact-item p {
+    color: #ddd !important;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #555 !important;
+}
+
+/* =========================================================
+   MOBILE MENU STYLES (Screen ndogo za simu)
+   ========================================================= */
+@media (max-width: 768px) {
+    #hamburgerBtn {
+        display: block !important; /* Inaonyesha kitufe cha Hamburger kwenye simu */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5b2c1f;
+        padding: 10px 0;
+    }
+
+    /* Menu ikifunguka */
+    nav ul.nav-active {
+        display: flex !important;
+    }
+
+    #themeToggleBtn {
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+</style>
+<script src="script.js"></script>
 </body>
 
 </html>
